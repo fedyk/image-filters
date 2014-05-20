@@ -1,0 +1,35 @@
+<div class="edit-image-actions">
+  <button class="btn btn-default" data-close="true">Close</button> 
+  <button class="btn btn-primary" data-save="true">Save</button> 
+</div>
+
+<div class="row">
+  <div id="options" class="col-md-3">
+    <form role="form">
+      <div class="form-group">
+        <label for="inputEmail3" class="control-label">Gaussian Blur - radius</label>
+
+        <input id="gaussian-blur-slide" data-slider-id='gaussian-blur-slide' type="text" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-value="0"/>
+      </div>
+      <div class="form-group">
+        <label for="inputEmail3" class="control-label">Median - window</label>
+        <input id="median-slide" data-slider-id='median-slide' type="text" data-slider-min="0" data-slider-max="10" data-slider-step="1" data-slider-value="0"/>
+      </div>
+      <div class="form-group">
+        <label for="inputEmail3" class="control-label">Noise - amount</label>
+        <input id="noise-slide" data-slider-id='noise-slide' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="0"/>
+      </div>
+    </form>
+  </div>
+
+  <div class="col-md-9">
+    <div id="image-wrapper">
+      <!-- Place for image -->
+    </div>
+    <div id="canvas-wrapper">
+      <canvas id="canvas-preview"></canvas>
+      <div id="canvas-loading"></div>
+    </div>
+  </div>
+
+</div>

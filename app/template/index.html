@@ -1,0 +1,18 @@
+<div class="clearfix">
+  <a href="/upload" data-navigate="true" class="btn btn-success pull-right">Upload</a>
+  <h4>Images</h4>
+</div>
+
+<div class="image-gallery">
+<% if (!images || !images.length) { %>
+  <p>There is no images</p>
+<% } else { %> 
+  
+  <% _.each(images, function(image, index) { %>
+    <div class="col-sm-3 image-item" data-edit-image="<%= index %>">
+      <img class="img-thumbnail" style="width: 100%;" alt="140x140" src="<%= image.getSrc() %>">
+    </div>
+  <% }); %>
+
+<% } %>
+</div>
