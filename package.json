@@ -1,15 +1,15 @@
 {
-  "name": "fotomag",
+  "name": "image-filters",
+  "author": "Andrew Fedyk",
   "version": "0.0.1",
-  "description": "Test app",
+  "description": "Test how WebWorker perform",
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/mocha/bin/mocha --reporter list"
+    "test": "mocha --reporter list"
   },
-  "author": "Andrew Fedyk",
   "license": "ISC",
   "dependencies": {
-    "express": "~4.1.1",
-    "mocha": "^1.18.2"
+    "express": "~4.17.1",
+    "mocha": "^6.2.2"
   }
 }
