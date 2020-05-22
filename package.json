@@ -5,11 +5,7 @@
   "description": "Test how WebWorker perform",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter list"
   },
   "license": "ISC",
-  "dependencies": {
-    "express": "~4.17.1",
-    "mocha": "^6.2.2"
-  }
+  "dependencies": {}
 }
